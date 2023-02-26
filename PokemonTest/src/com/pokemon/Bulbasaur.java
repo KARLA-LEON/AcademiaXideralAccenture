@@ -1,5 +1,7 @@
 package com.pokemon;
 
+//Aquí decimos que la clase Bulbasaur hereda de la clase Pokemon e implementa los metodos de la interfaz iPlanta
+
 public class Bulbasaur extends Pokemon implements iPlanta{
 
     public Bulbasaur() {

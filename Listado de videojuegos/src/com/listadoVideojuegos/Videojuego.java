@@ -2,12 +2,14 @@ package com.listadoVideojuegos;
 
 public class Videojuego {
 
+	//Creamos atributos
     private int codigo;
     private String titulo;
     private String consola;
     private int cantidadJugadores;
     private String categoria;
 
+    //Creamos el constructor y como parámetro le pasamos los atributos
     public Videojuego(int codigo, String titulo, String consola, int cantidadJugadores, String categoria) {
         this.codigo = codigo;
         this.titulo = titulo;
@@ -16,6 +18,7 @@ public class Videojuego {
         this.categoria = categoria;
     }
 
+    //Getters y setters
     public int getCodigo() {
         return codigo;
     }

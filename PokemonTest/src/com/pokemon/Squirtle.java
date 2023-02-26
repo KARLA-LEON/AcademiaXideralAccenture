@@ -1,5 +1,5 @@
 package com.pokemon;
-
+//Aquí decimos que la clase Squirtle hereda de la clase Pokemon e implementa los metodos de la interfaz iAgua
 public class Squirtle extends Pokemon implements iAgua{
 
     public Squirtle() {

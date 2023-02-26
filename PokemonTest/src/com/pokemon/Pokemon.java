@@ -1,8 +1,17 @@
 package com.pokemon;
+/*Pequeño programa en el cual se implementan las nociones de herencia, 
+polimorfismo, clases abstractas e interfaces. El objetivo es crear una clase padre
+que es Pokemon, la cual le heredara sus atributos (numero en la pokedex, nombre, etc)
+y también sus métodos los cuales son los distintos ataques que tienen tanto todos
+los pokemon
+*/
+
+
+
 //Clase abstracta
 public abstract class Pokemon {
 
-    //Sólo las clases hijas tendrán acceso
+    //Se crean los atributos a los que sólo las clases hijas tendrán acceso
    protected int numPokedex;
    protected String nombre;
    protected double peso;
@@ -12,7 +21,7 @@ public abstract class Pokemon {
    tambien metodos abstractos que las clases hijas
    implementarán a su modo
    */
-    //Método abstracto ya que no tiene implementacion
+    //Método abstracto ya que no tiene implementacion directamente
     protected abstract void atacarPlacaje();
     protected abstract void atacarAranazo();
     protected abstract void atacarMordisco();

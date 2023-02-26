@@ -1,4 +1,5 @@
 package com.pokemon;
+//Aquí decimos que la clase Pikachu hereda de la clase Pokemon e implementa los metodos de la interfaz iElectrico
 
 public class Pikachu extends Pokemon implements iElectrico {
 

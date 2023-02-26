@@ -8,6 +8,7 @@ public class EjercicioVideojuego {
 
     public static void main (String[]args){
 
+    	//Creamos un arreglo en el cual vamos a ingresar los atributos de cada objeto
         List<Videojuego> listaVideojuegos = new ArrayList<Videojuego>();
 
         //Creacion de objeto mediante constructor
@@ -47,26 +48,31 @@ public class EjercicioVideojuego {
                 4,
                 "Simulación");
 
+        //Agregamos los videojuegos al arreglo
         listaVideojuegos.add(juego1);
         listaVideojuegos.add(juego2);
         listaVideojuegos.add(juego3);
         listaVideojuegos.add(juego4);
         listaVideojuegos.add(juego5);
 
+        //Queremos que cada uno de los elementos del arreglo
+        //nos imprima en pantalla sus datos 
         for (Videojuego juego : listaVideojuegos){
             System.out.println("Título: "+ juego.getTitulo()+
-                    "Consola: "+ juego.getConsola()+
-                    "Jugadores: "+ juego.getCantidadJugadores()+
-                    "Categoría: "+ juego.getCategoria());
+                    " Consola: "+ juego.getConsola()+
+                    " Jugadores: "+ juego.getCantidadJugadores()+
+                    " Categoría: "+ juego.getCategoria());
         }
 
-        //Cambiar nombre y jugadores a animal crossing usando set
+        //Cambiamos el nombre, jugadores y categoría de animal crossing usando set
         juego4.setTitulo("Legend of Zelda: Breath of the wild");
         juego4.setCantidadJugadores(1);
-        //juego4.setCategoria("Aventura");
-        //System.out.println(juego4);
+        juego4.setCategoria("Aventura");
+        
+        System.out.println("************************************");
 
-        //
+        //Queremos que con un for each se recorran los elementos del arreglo
+        //en busca de todos aquellos que cumplan con la característica
         for (Videojuego juego : listaVideojuegos) {
             if (juego.getConsola().equals("Nintendo switch")){
                 System.out.println(juego.toString());

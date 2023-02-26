@@ -10,10 +10,13 @@ package com.patronSingleton;
 public class Main {
 
 	public static void main(String[]args) {
-		
+		//Aquí en vez de crear el objeto se obtiene la instancia de Version, por lo tanto
+		//Ya no es necesario instanciar el objeto usuario ni carrito de compras aquí
+		//Ya que cada clase ahora puede acceder al método get instance
 		Version version = Version.getInstance();
 		//Usuario usuario = new Usuario(version);
-		CarritoDeCompras carritoDeCompras = new CarritoDeCompras(version);
+		
+		//CarritoDeCompras carritoDeCompras = new CarritoDeCompras(version);
 		
 	}
 }
